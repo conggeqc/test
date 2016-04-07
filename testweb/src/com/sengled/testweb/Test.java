@@ -13,5 +13,8 @@ public class Test {
 		System.out.println("yes , I got it");
 
 		System.out.print("git add something");
+		
+		System.out.println("from eclipse");
+		
 	}
 }
