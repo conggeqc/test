@@ -37,7 +37,7 @@ jobs:
     - name: put the executable file snips into a directory that in the $PATH environment variable
       run: cp snips /usr/local/bin/snips
     - name: test snips
-      run: ./snips
+      run: snips
     #- name: ls
     #  run: ls
 
