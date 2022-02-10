@@ -33,7 +33,7 @@ jobs:
       run: wget https://github.com/qingstor/snips/releases/download/v0.3.6/snips-v0.3.6-linux_amd64.tar.gz
     #  run: wget https://github.com/qingstor/snips/releases/download/v0.3.6/snips-v0.3.6-darwin_amd64.tar.gz
     - name: Unarchive the downloaded file
-      run: tar -xvf snips-v0.3.6-darwin_amd64.tar.gz
+      run: tar -xvf snips-v0.3.6-linux_amd64.tar.gz
     - name: put the executable file snips into a directory that in the $PATH environment variable
       run: cp snips /usr/local/bin/snips
     - name: test snips
