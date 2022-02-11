@@ -26,6 +26,13 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Runs a single command using the runners shell
+    
+    - name: ls
+      run: ls actions/checkout@v2
+    
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    #- uses: actions/checkout@v2
+    
     - name: Send greeting
       run: echo "Hello ${{ github.event.inputs.name }}"
     
@@ -38,6 +45,5 @@ jobs:
       run: cp snips /usr/local/bin/snips
     - name: test snips
       run: snips
-    #- name: ls
-    #  run: ls
+   
 
