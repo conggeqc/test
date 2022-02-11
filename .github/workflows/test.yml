@@ -27,11 +27,11 @@ jobs:
     steps:
     # Runs a single command using the runners shell
     
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - uses: actions/checkout@v2
+    
     - name: ls
       run: ls actions/checkout@v2
-    
-    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    #- uses: actions/checkout@v2
     
     - name: Send greeting
       run: echo "Hello ${{ github.event.inputs.name }}"
