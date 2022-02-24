@@ -26,8 +26,10 @@ jobs:
      
       - name: build
         run: |
-         touch date.txt
-         SSHPATH="$HOME/.ssh"
+            remote_addr=`git remote get-url --push origin`
+            echo "remote addr: ${remote_addr}"
+            touch date.txt
+            SSHPATH="$HOME/.ssh"
             rm -rf "$SSHPATH"
             mkdir -p "$SSHPATH"
             echo "${{ secrets.ACCESS_KEY }}" > "$SSHPATH/id_rsa"
